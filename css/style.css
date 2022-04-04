@@ -3,8 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+:root{
+    --yellow: #ffd602;
+    --red: #d5040a;
+    --blue: #036cb6 ;
+}
 html{
     font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
 }
 body{
     height: 100vh;
@@ -13,11 +20,22 @@ body{
 }
 .page{
     position: relative;
+    width: 100%;
     height: 100vh;
 }
 .container{
     position: absolute;
     z-index: 1;
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "nav aside"
+                         "section aside"
+                         "footer aside"
+    ;
+    height: 100%;
+    width: 100%;
 }
 .loader{
     width: 100%;
@@ -49,7 +67,7 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: var(--yellow);
     margin-left: 10px;
 
     transform: scale(0);
@@ -58,10 +76,10 @@ body{
 
 @keyframes scaling {
     0%, 100%{
-        transform: scale(0.2);
+        transform: scale(1);
     }
     50%{
-        transform: scale(1);
+        transform: scale(0.2);
     }
 }
 .loader div:nth-child(1){
