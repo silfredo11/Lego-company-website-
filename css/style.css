@@ -40,6 +40,7 @@ body{
 .container .navbar{
     grid-area: nav;
     display: flex;
+    background-color: red;
 }
 .navbar__contaainer{
     display: flex;
