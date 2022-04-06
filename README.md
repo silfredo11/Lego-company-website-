@@ -1,10 +1,10 @@
 #Lego Website
 
-En este proyecto trabajare en hacer una pagina web que haga alusion a lo que seria una pagina web para la empresa lego. 
+En este proyecto trabaje  una pagina web que haga alusion a lo que seria un posible lego website para la empresa lego. 
 
 
 
-**Para crear esta pagina web** Usare:
+**Para crear esta pagina web** Use:
 
 - HTML5
 - CSS3
