@@ -271,10 +271,10 @@ footer div img{
     animation-delay: 0.6s;
 }
 .hidden{
-    display: none;
+    display: none !important;
 } 
 .visible{
-    display: grid;
+    display: grid!important;
     
 }
 .modal{
@@ -283,4 +283,13 @@ footer div img{
     background-color: rgba( 0, 0, 0, 0.5);
     position: absolute;
     z-index: 4;
+
+    display: grid;
+    place-items: center;
+}
+.modal__content{
+    background: white;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
 }
